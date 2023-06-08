@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+
+  <title>Registration Form</title>
+</head>
+<h1> Registration Form</h1>
+<h4>Please provide your information</h4>
+
+<body>
+  <form action="action_page.php" target="_blank" method="post">
+
+    <br>
+
+    <label for="Race/Nationality">Race/Nationality:</label>
+    <input name="birthlocation" type="text" placeholder="Birth Location" required>
+
+    <br><br>
+
+    <label for="name">Enter your name:</label>
+    <input type="text" name="name" id="name" required>
+
+    <br><br>
+
+    <label for="email">Enter your email:</label>
+    <input type="email" name="email" id="email" required>
+
+    <br><br>
+
+    <label for="phone"></label>
+    <div>Telephone:</div>
+
+    <input name="phone" id="phone" type="text" size="3" maxlength="3" pattern="[0-9]" placeholder="XXX">
+    <font>-</font>
+
+    <input name="phone" id="phone" type="text" size="3" maxlength="3" pattern="[0-9]" placeholder="XXX">
+    <font>-</font>
+
+    <input name="phone" id="phone" type="text" size="4" maxlength="4" pattern="[0-9]+" placeholder="XXXX">
+
+    <br><br><br>
+    <label for="maritalstatus">
+      <font>MaritalStatus</font>
+    </label><br>
+    <select name="martialstatus">
+      <option value="Divorced">Divorced</option>
+      <option value="Widowed">Widowed</option>
+      <option value="Married">Married</option>
+      <option value="Single" selected>Single</option>
+    </select>
+
+    <br><br>
+
+    <label for="D.O.B">
+      <font>D.O.B</font>
+    </label><br>
+    <input type="date" name="D.O.B" id="D.O.B">
+
+    <br><br><br>
+
+    <label for="gender">
+      <font>Gender:</font>
+    </label><br>
+
+    <input name="gender" id="male" type="radio">
+    <label for="male">
+      <font>Male</font>
+    </label></input>
+
+    <input name="gender" id="female" type="radio">
+    <label for="female">
+      <font>Female</font>
+    </label>
+    <input name="gender" id="other" type="radio">
+    <label for="other">
+      <font>Other</font>
+    </label>
+
+    <br><br>
+
+    <label for="Family Size">
+      <font>Family Size:</font>
+    </label><br>
+    <input type="text" name="householdsize" id="householdsize" maxlength="3" pattern="[0-9]+" size="3">
+
+    <br><br><br>
+
+    <label for="Children">
+      <font>Children, If so....how many:</font>
+    </label>
+    <input type="text" name="Children" id="Children" maxlength="3" pattern="[0-9]+" size="3">
+    <br><br><br>
+
+    <br>
+
+    <label for="income">Annual Income:</label>
+    <select name="income" id="income">
+      <option value="less than 35K">Less Than $35K</option>
+      <option value="more $35K">More Than $35K</option>
+      <option value="N/A" selected>N/A</option>
+    </select>
+
+    <br><br><br>
+
+    <label for="Allergies">
+      <font>Allergies:</font>
+      <input type="text" name="allergies" id="allergies" rows="3" cols="5" placeholder="If none type N/A.">
+    </label>
+
+    <br><br><br>
+
+    <label for="password">
+      <font>Password*:</font>
+      <input type="Cpassword" name="Cpassword" placeholder="Password">
+    </label>
+
+    <br><br>
+
+    <label for="Cpassword">
+      <font>Confirm Password*:</font>
+    </label><br>
+    <input type="Cpassword" name="Cpassword" placeholder="Confirm Password">
+
+    <br><br><br>
+
+    <input type="checkbox" name="confirm" id="confirm" value="confirm">
+    <label for="confirm">
+      <font>By signing up, you agree to the <a href="termsofS.com">Terms of Service.</a></font>
+    </label>
+
+    <br>
+
+    <input type="SUBMIT">
+
+  </form>
+</body>
+
+</html>
